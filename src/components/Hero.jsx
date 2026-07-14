@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code, Cpu, Database, Award, Sparkles, Brain } from 'lucide-react';
+import { ArrowRight, Code, Cpu, Database, Award, Sparkles, Brain, Download } from 'lucide-react';
 import profilePhoto from '../assets/photo.png';
 
 export default function Hero() {
@@ -27,7 +27,7 @@ export default function Hero() {
         overflow: 'hidden',
       }}
     >
-      {/* Decorative Floating background particles for attractive UI */}
+      {/* Decorative Floating background particles */}
       <div className="bg-particle particle-1" />
       <div className="bg-particle particle-2" />
       <div className="bg-particle particle-3" />
@@ -109,6 +109,22 @@ export default function Hero() {
               >
                 View My Work <ArrowRight size={16} />
               </button>
+
+              {/* Seamless Download Resume Link */}
+              <a
+                href="/resume.pdf"
+                download="Suruthi_Vijaya_Resume.pdf"
+                className="btn btn-secondary"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  textDecoration: 'none',
+                }}
+              >
+                Resume <Download size={16} />
+              </a>
+
               <button
                 className="btn btn-secondary"
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -127,7 +143,7 @@ export default function Hero() {
             }}
             className="hero-image-container"
           >
-            {/* Elegant double offset background frame for visual life */}
+            {/* Elegant double offset background frame */}
             <div
               style={{
                 position: 'absolute',
@@ -162,7 +178,7 @@ export default function Hero() {
               }}
               className="portrait-frame"
             >
-              {/* Profile Image */}
+              {/* Profile Image reinstated from assets/photo.png */}
               <img
                 src={profilePhoto}
                 alt="Suruthi Vijaya R"
