@@ -1,9 +1,17 @@
 import React from 'react';
-import { Award, Trophy, Star, ShieldCheck } from 'lucide-react';
+import { G, Trophy, Star, ShieldCheck } from 'lucide-react';
 
 export default function Achievements() {
   const achievements = [
     {
+  title: 'Diamond Badge',
+  platform: 'CodeChef',
+  detail: 'Achieved 1000/1000 problem solving score',
+  icon: <Gem size={24} />,
+  badgeColor: 'linear-gradient(135deg, #E0F7FA 0%, #00B4D8 50%, #0077B6 100%)', // Diamond / Cool Cyan-Blue
+  textColor: '#0077B6',
+  shadow: 'rgba(0, 180, 216, 0.2)',
+},{
       title: '100+ Solved',
       platform: 'LeetCode',
       detail: 'Algorithmic Problems Solved in Java',
@@ -21,19 +29,11 @@ export default function Achievements() {
       textColor: '#D29A44',
       shadow: 'rgba(210, 154, 68, 0.12)',
     },
+   
     {
       title: 'Bronze Badge',
-      platform: 'HackerRank (Python)',
-      detail: 'Core Syntax & Logic Benchmarks',
-      icon: <Award size={24} />,
-      badgeColor: 'linear-gradient(135deg, #DF9C7B 0%, #A25D3D 100%)', // Bronze
-      textColor: '#A25D3D',
-      shadow: 'rgba(162, 93, 61, 0.12)',
-    },
-    {
-      title: 'Bronze Badge',
-      platform: 'HackerRank (SQL)',
-      detail: 'Query Structuring & Schema Joins',
+      platform: 'HackerRank (SQL,Python)',
+      detail: 'Problem Solving & Language Proficiency',
       icon: <ShieldCheck size={24} />,
       badgeColor: 'linear-gradient(135deg, #DF9C7B 0%, #A25D3D 100%)', // Bronze
       textColor: '#A25D3D',
