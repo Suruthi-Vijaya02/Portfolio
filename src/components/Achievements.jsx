@@ -1,5 +1,5 @@
 import React from 'react';
-import { G, Trophy, Star, ShieldCheck } from 'lucide-react';
+import { Gem, Trophy, Star, ShieldCheck } from 'lucide-react';
 
 export default function Achievements() {
   const achievements = [
